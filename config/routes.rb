@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root to: 'top#top'
 
   namespace :api, format: 'json' do
-    resources :memos, only: [:index]
+    resources :memos, only: [:index, :create]
   end
 
   get '*path', to: 'top#top', format: false   #getのリクエストをまとめる
