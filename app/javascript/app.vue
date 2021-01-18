@@ -1,5 +1,18 @@
 <<template>
   <div id="app">
+    <nav>
+      <router-link 
+        to="/"
+        active-class="link-active"
+        exact
+      >Home</router-link>
+      <router-link 
+        to="/about"
+        active-class="link-active"
+        exact
+      >about</router-link>
+    </nav>
+    <router-view></router-view>
     <div class="form">
       <div class="form-group">
         <input v-model="title" placeholder="title" class="form-control">
@@ -57,6 +70,10 @@ export default {
 </script>
 
 <style scoped>
+.link-active {
+  font-size: 36px;
+}
+
  .form {
   display: flex;
   flex-direction: column;

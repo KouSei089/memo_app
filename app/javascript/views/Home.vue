@@ -1,6 +1,7 @@
 <template>
   <section id="home">
     <h1>{{ title }}</h1>
+    <button @click="toUsers">UserPage</button>
   </section>
 </template>
 
@@ -8,8 +9,13 @@
 export default {
   data() {
     return {
-      title: "Homeです"
+      title: "いい感じですか？"
     };
+  },
+  methods: {
+    toUsers() {
+      this.$router.push("about");
+    }
   }
 };
 </script>

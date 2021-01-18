@@ -13,8 +13,12 @@ const router = new Router({
       component: Home,
     },
     {
-      path: "/about",
+      path: "/about/:id",
       component: About,
+      props: true,
+      children: [
+        { path: "post", component:  }
+      ]
     },
   ],
 });
