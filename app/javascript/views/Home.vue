@@ -9,7 +9,7 @@
 export default {
   data() {
     return {
-      title: "いい感じですか？"
+      title: "Homeページです"
     };
   },
   methods: {

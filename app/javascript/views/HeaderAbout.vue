@@ -1,0 +1,15 @@
+<template>
+  <nav>
+    <h2>About</h2>
+    <router-link 
+      to="/"
+      active-class="link-active"
+      exact
+    >Home</router-link>
+    <router-link 
+      to="/about/:id"
+      active-class="link-active"
+      exact
+    >about</router-link>
+  </nav>
+</template>

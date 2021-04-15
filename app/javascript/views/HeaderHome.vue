@@ -1,0 +1,30 @@
+<template>
+  <nav>
+    <h2>HomePage</h2>
+    <router-link 
+      to="/"
+      active-class="link--active"
+      exact
+    >Home</router-link>
+    <router-link 
+      to="/new-create"
+      active-class="link--active"
+      exact
+    >NewCreate</router-link>
+    <router-link 
+      to="/review"
+      active-class="link--active"
+      exact
+    >Review</router-link>
+    <router-link 
+      to="/login"
+      active-class="link--active"
+      exact
+    >login</router-link>
+    <router-link 
+      to="/logout"
+      active-class="link--active"
+      exact
+    >logout</router-link>
+  </nav>
+</template>
